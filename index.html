@@ -1,0 +1,220 @@
+<html>
+<head>
+      <title>Star Mark Hotel</title>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff; /* Default text color for header/hero */
+    background-color: #000; /* Fallback background */
+    line-height: 1.6;
+}
+body{
+      background-image:url("home page bg.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 80%;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    color: #ffd700; /* Gold-like hover color */
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header - Top Bar */
+.top-bar {
+    background-color: #1a1a1a; /* Darker shade for the very top bar */
+    padding: 10px 0;
+    font-size: 0.85em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.top-bar .contact-info {
+    display: flex;
+    justify-content: flex-start; /* Align to the left as in the image */
+    gap: 30px; /* Space between address and phone */
+    color: #bbb;
+}
+
+.top-bar .contact-info i {
+    margin-right: 8px;
+    color: #ffd700; /* Gold icon color */
+}
+
+/* Header - Navbar */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.6); /* Slightly transparent for header */
+    padding: 20px 0;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 1.8em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.logo img {
+    height: 40px; /* Adjust logo size */
+    margin-right: 10px;
+    filter: brightness(0) invert(1); /* Makes the logo white if it's black */
+}
+
+.logo small {
+    font-size: 0.5em;
+    display: block;
+    margin-left: 5px;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    color: #bbb; /* Lighter color for "Hotels & Resorts" */
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px; /* Space between nav items */
+}
+
+.nav-links li a {
+    font-weight: 600;
+    font-size: 0.95em;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 5px; /* Space for underline effect */
+}
+
+.nav-links li a {
+    font-size: 0.7em;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+.nav-links li a::after { /* Simple hover underline effect */
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffd700;
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-links li a:hover::after {
+    width: 100%;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 700px; /* Adjust height as needed */
+    background: url('../images/hero-background.jpg') no-repeat center center/cover; /* Replace with your image path */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.hero-section::before { /* Dark overlay for text readability */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); 
+}
+
+.hero-content {
+    position: relative; 
+    z-index: 1;
+    color: #fff;
+}
+
+.hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4.5em; /* Adjust font size */
+    margin-bottom: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero-content p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+	</style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="contact-info">
+                    <span><i class="fas fa-map-marker-alt"></i> 121 King Str. Melbourne Victoria</span>
+                    <span><i class="fas fa-phone-alt"></i> 1-546-854-8898</span>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar">
+            <div class="container nav-content">
+                <div class="logo">
+                    <a href="hotel_booking.html">
+                        <img src="filled-star.png" alt="Star Mark Hotel">
+                        <span>Star Mark</span>
+                        <small>HOTEL</small>
+                    </a>
+                </div>
+                <ul class="nav-links">
+	<li><a href="hotel_home_page.html">HOME</a></li>
+                   <li><a href="hotel_rooms.html">ROOM & RATE</a></li>
+                   <li><a href="hotel_booking.html">RESERVATION</a></li>
+                   <li><a href="star_mark_hotel_menu.html">MENU</a></li>
+                    <li><a href="hotel_amenities.html">FACILITIES</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Unique Experience</h1>
+            <p>— ENJOY WITH US —</p>
+        </div>
+    </section>
+
+    </body>
+</html>

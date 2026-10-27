@@ -1,0 +1,169 @@
+<html>
+<head>
+    <title>Hotel Rooms</title>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style type="text/css">
+	body{background-color:#a1887f;
+	background-image: radial-gradient(#cfd8dc 1.5px, transparent 1px);
+	 background-size: 20px 20px;
+	 margin: 0;
+         padding: 20px;
+	 display: flex;
+         flex-direction: column;
+         align-items: center;
+	 min-height: 100vh; 
+	 }
+	 .container {
+            background-color:#d7ccc8;
+            border: 2px solid black;
+	    padding: 20px;
+            max-width:1000px;
+	    box-shadow: 0 4px 8px ;
+	}
+	 .header {
+            text-align: center;
+            margin-bottom: 30px;
+	    text-transform: uppercase;
+        }
+	 .header h1 {
+            font-family: 'Dancing Script';
+	    font-size: 3.8em;
+	    margin-bottom: 3px;
+        }
+	 
+	 .header h2 {
+            font-family: 'roboto';
+            font-size: 1.4em;
+            font-weight: normal;
+            margin-top: 0;
+            border: 1px solid black;
+	    padding: 1px 3px;
+	    display: inline-block;
+            background-color:white;
+        }
+	.room-card {
+	display: flex;
+	align-items: center;
+	background-color: #d7ccc8;
+	border:2px solid black;
+	margin-bottom: 20px;
+	padding: 20px;
+      	box-shadow: 0 4px 8px ;
+	}
+	.room-card-content {
+        flex-grow: 1;
+	padding-right: 15px;
+        }
+	 .room-card h3{
+         font-family: 'Dancing Script';
+	 font-size: 2em;
+         color:black;
+         }
+
+        .room-card img {
+         width: 250px;
+	 height: 150px;
+	 object-fit: cover;
+	 margin-right: 10px;
+	 border: 1px solid white;
+        }
+	 .room-price-button {
+          display: flex;
+          flex-direction: column;
+	  align-items: flex-end;
+	  margin-left: auto;
+	}
+	 .room-price {
+          font-size: 1.5em;
+          font-weight: bold;
+          margin-bottom: 10px;
+	 }
+	 .book-now-btn {
+         background-color: #e0b06b;
+	 padding: 10px 20px;
+	 border: 2px solid black;
+	 font-weight: bold;
+	 color:black;
+	 text-transform: uppercase;
+	 text-decoration: none;
+	 box-shadow: 2px 2px 0px black; 
+	 }
+
+  </style>
+</head>
+<body>
+
+    <div class="container">
+    <div class="header">
+            <h1>star <sub><img src="filled-star.png"alt="star" width=80 height=80></sub> mark</h1>
+            <h2>our rooms</h2>
+        </div>
+    
+	<div class="room-card">
+        <img src="Executive Suit Room.jpg"alt="Executive Suit Room">
+        <div class="room-card-content">
+        <h3>1. Executive Suit Room</h3>
+        </div>
+        <div class="room-price-button">
+        <div class="room-price">Rs. 6,500</div>
+        <a href="hotel_booking.html" class="book-now-btn">book now</a>
+        </div>
+        </div>
+	
+	<div class="room-card">
+        <img src="Premium king Room.jpg"alt="Premium King Room">
+	<div class="room-card-content">
+        <h3>2. Premium King Room</h3>
+	</div>
+        <div class="room-price-button">
+        <div class="room-price">Rs. 4,000</div>
+        <a href="hotel_booking.html" class="book-now-btn">book now</a>
+	</div>
+        </div>
+
+	<div class="room-card">
+        <img src="honeymoon haven.avif"alt="Honeymoon Haven">
+        <div class="room-card-content">
+        <h3>3. Honeymoon Haven</h3>
+        </div>
+        <div class="room-price-button">
+        <div class="room-price">Rs. 5,500</div>
+        <a href="hotel_booking.html" class="book-now-btn">book now</a>
+        </div>
+        </div>
+	
+	<div class="room-card">
+        <img src="royal club room.avif"alt="Royal Club Room">
+        <div class="room-card-content">
+        <h3>4. Royal Club Room</h3>
+        </div>
+        <div class="room-price-button">
+        <div class="room-price">Rs. 7,500</div>
+        <a href="hotel_booking.html" class="book-now-btn">book now</a>
+        </div>
+        </div>
+
+	<div class="room-card">
+        <img src="Deluxe Twin Room.jpg" alt="Deluxe Twin Room">
+         <div class="room-card-content">
+         <h3>5. Deluxe Twin Room</h3>
+         </div>
+         <div class="room-price-button">
+         <div class="room-price">Rs. 3,000</div>
+         <a href="hotel_booking.html" class="book-now-btn">book now</a>
+         </div>
+         </div>
+	
+	<div class="room-card">
+        <img src="Poolside Paradise.jpg" alt="Poolside Paradise">
+         <div class="room-card-content">
+         <h3>6. Poolside Paradise</h3>
+         </div>
+         <div class="room-price-button">
+         <div class="room-price">Rs. 3,800</div>
+         <a href="hotel_booking.html" class="book-now-btn">book now</a>
+         </div>
+         </div>
+	
+</body>
+</html>

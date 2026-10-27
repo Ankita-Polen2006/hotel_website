@@ -1,0 +1,151 @@
+<html>
+<head>
+<title>Hotel Booking Form</title>
+<style>
+	body {
+	font-family: Arial;
+	padding: 20px;
+	background-color:#e0e0e0; 
+    	}
+	.header-section{ 
+	text-align: center;
+	}
+	.header-section{
+	background-image:
+	url("sea-beach_waves.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 143%;
+	}
+	.header-images{	
+	display: flex;
+	gap: 60px;
+	justify-content: center;
+	}
+	.header-images img {	
+	width: 200px; 
+	height: 200px;
+	border-radius: 50%;
+    	object-fit: cover;
+	border: 3px solid #fff; 
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+	}
+	.header-section h1{
+	font-size:4em;
+	color: black;
+	text-align: center;
+	margin-bottom:5px;
+	}
+	.p{
+	font-size: 1.4em;
+	text-align: center;
+	color: black;
+	margin-bottom: 50px;
+	}
+	.box-shadow{
+	background-color:#f5f5f5;
+	box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+	}
+	.form-container {
+	padding: 30px;
+	border-radius: 8px;
+	background-color:#f5f5f5;
+	border:3px solid #26c6da;
+	line-height:3;
+	width: 600px;
+	margin: 30px auto;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+	}
+	.form-booking label {
+	font-weight: bold;
+	font-size: 1.7em;
+	}
+	.required {
+	color: red;
+	margin-left: 3px;
+    }	
+	.form-booking input,
+      .form-booking select {
+      padding: 8px;
+      font-size: 1.4em;
+      width:60.50%;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+    }
+	.form-booking input[type="submit"] {
+	background-color:#0277bd;
+	color: white;
+	width: 50%;
+	font-size:1.5em;
+	display: block;
+	margin-left: auto; /* Center the block button */
+        margin-right: auto; 
+        display: block;
+	padding: 8px;
+	cursor: pointer;
+	}
+	.form-booking input[type="submit"]:hover {
+	background-color: #01579b;
+	}
+</style>
+</head>
+<body>
+	<div class="header-section">
+	<div class="header-images">
+	<img src="hotel corridor.jpg"alt="hotel corridor">
+	
+	<img src="location.jpg"alt="location">
+
+	<img src="hotel lobby.jpg"alt="hotel lobby">
+	</div>
+	
+	<h1>Hotel Booking</h1>	
+	</div>
+	
+	<div class="p">
+	<p><span class="box-shadow">Experience something new every moment<span></p>
+	</div>
+
+	<div class="form-container">
+	<form class="form-booking" action="hotel_booking_confirm.html" method="POST">
+
+	<label for="fullName">Full Name:<span class="required">*</span></label>
+	 <input type="text" id="fullName" name="fullName" placeholder="Full Name" required>
+	<br>
+
+	<label for="Phone-Number">Phone-Number:<span class="required">*</span></label>
+	<input type="tel" id="Phone" name="Phone" placeholder="Phone Number" required>
+	<br>
+
+	<label for="email">Email-ID:<span class="required">*</span></label>
+	<input type="email" id="email" name="email" placeholder="ex: myname@example.com" required>
+	<br>
+	
+	<label for="room">Select Room Type:<span class="required">*</span></label>
+	<select id="room" name="room" required>
+	<option value="">-- Choose Room --</option>
+	<option value="Executive Suit Room">Executive Suit Room</option>
+	<option value="Premium King Room">Premium King Room</option>
+	<option value="Honeymoon Haven">Honeymoon Haven</option>
+      <option value="Royal Club Room">Royal Club Room</option>
+      <option value="Deluxe Twin Room">Deluxe Twin Room</option>
+	<option value="Poolside Paradise">Poolside Paradise</option>
+	    </select>
+	<br>
+
+	<label for="numGuests">Number of Guests:<span class="required">*</span></label>
+	<input type="number" id="numGuests" name="numGuests" placeholder="Maximum 10" min="1" max="10" required> <br>
+
+	<label for="checkin">Check-in Date:<span class="required">*</span></label>
+	<input type="date" id="checkin" name="checkin" required> <br>
+	
+	<label for="checkout">Check-out Date:<span class="required">*</span></label>
+	<input type="date" id="checkout" name="checkout" required>
+	<br><br>
+	<a href="hotel_booking_confirm.html">
+	<input type="submit" value="Book Now"></a>
+	</div>
+     </form>   
+</body>
+</html>
